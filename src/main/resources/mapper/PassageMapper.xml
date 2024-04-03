@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Englilsh.repository.PassageMapper">
+    <resultMap id="BaseResultMap" type="com.Englilsh.domain.Passage">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="subject_level" jdbcType="INTEGER" property="subjectLevel" />
+        <result column="subject_id" jdbcType="INTEGER" property="subjectId" />
+        <result column="info_text_content_id" jdbcType="INTEGER" property="infoTextContentId" />
+        <result column="question_ids" jdbcType="VARCHAR" property="questionIds" />
+        <result column="suggest_time" jdbcType="VARCHAR" property="suggestTime" />
+        <result column="create_user" jdbcType="INTEGER" property="createUser" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="deleted" jdbcType="BIT" property="deleted" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, subject_level, subject_id, info_text_content_id, suggest_time, question_ids,
+    create_user, create_time, deleted
+    </sql>
+    <select id="page" resultMap="BaseResultMap" parameterType="com.Englilsh.viewmodel.admin.passage.PassagePageRequestVM">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_passage
+        <where>
+            deleted = 0
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="subjectLevel != null">
+            and subject_level = #{subjectLevel}
+        </if>
+        <if test="subjectId != null">
+            and subject_id = #{subjectId}
+        </if>
+        </where>
+    </select>
+    <insert id="insertSelective" parameterType="com.Englilsh.domain.Passage" useGeneratedKeys="true" keyProperty="id">
+        insert into t_passage
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="subjectId != null">
+                subject_id,
+            </if>
+            <if test="subjectLevel != null">
+                subject_level,
+            </if>
+            <if test="infoTextContentId != null">
+                info_text_content_id,
+            </if>
+            <if test="questionIds != null">
+                question_ids,
+            </if>
+            <if test="suggestTime != null">
+                suggest_time,
+            </if>
+            <if test="createUser != null">
+                create_user,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="deleted != null">
+                deleted,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="subjectId != null">
+                #{subjectId,jdbcType=INTEGER},
+            </if>
+            <if test="subjectLevel != null">
+                #{subjectLevel,jdbcType=INTEGER},
+            </if>
+            <if test="infoTextContentId != null">
+                #{infoTextContentId,jdbcType=INTEGER},
+            </if>
+            <if test="questionIds != null">
+                #{questionIds,jdbcType=VARCHAR},
+            </if>
+            <if test="suggestTime != null">
+                #{suggestTime,jdbcType=VARCHAR},
+            </if>
+            <if test="createUser != null">
+                #{createUser,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="deleted != null">
+                #{deleted,jdbcType=BIT},
+            </if>
+        </trim>
+    </insert>
+
+<!--    <update id="updateByPrimaryKeySelective" parameterType="com.Englilsh.domain.Passage">-->
+<!--        update t_passage-->
+<!--        <set>-->
+<!--            <if test="questionType != null">-->
+<!--                question_type = #{questionType,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="subjectId != null">-->
+<!--                subject_id = #{subjectId,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="score != null">-->
+<!--                score = #{score,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="subjectLevel != null">-->
+<!--                subject_level = #{subjectLevel,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="correct != null">-->
+<!--                correct = #{correct,jdbcType=VARCHAR},-->
+<!--            </if>-->
+<!--            <if test="infoTextContentId != null">-->
+<!--                info_text_content_id = #{infoTextContentId,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="createUser != null">-->
+<!--                create_user = #{createUser,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="status != null">-->
+<!--                status = #{status,jdbcType=INTEGER},-->
+<!--            </if>-->
+<!--            <if test="createTime != null">-->
+<!--                create_time = #{createTime,jdbcType=TIMESTAMP},-->
+<!--            </if>-->
+<!--            <if test="deleted != null">-->
+<!--                deleted = #{deleted,jdbcType=BIT},-->
+<!--            </if>-->
+<!--        </set>-->
+<!--        where id = #{id,jdbcType=INTEGER}-->
+<!--    </update>-->
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from t_passage
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+</mapper>

@@ -1,0 +1,936 @@
+2024-03-27 19:32:43.505  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 23392 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:32:43.507  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:32:43.537  INFO 23392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:32:43.537  INFO 23392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:32:44.597  WARN 23392 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 19:32:44.613  INFO 23392 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 19:32:44.613  INFO 23392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1076 ms
+2024-03-27 19:32:45.286  INFO 23392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b791cf0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c1cc5fb, org.springframework.security.web.header.HeaderWriterFilter@68406894, org.springframework.web.filter.CorsFilter@bc4e524, org.springframework.security.web.authentication.logout.LogoutFilter@49ef3a3f, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@50d1006e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c9e4db8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12818567, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4755f423, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7fbf97f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@536db278, org.springframework.security.web.session.SessionManagementFilter@503b31ec, org.springframework.security.web.access.ExceptionTranslationFilter@1061c6f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@aac5c4c]
+2024-03-27 19:32:45.572  INFO 23392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-27 19:32:45.605  INFO 23392 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-27 19:32:45.611  INFO 23392 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-27 19:32:45.679  INFO 23392 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-27 19:32:45.681  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.51 seconds (JVM running for 3.137)
+2024-03-27 19:32:57.153  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 23392 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:32:57.153  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:32:57.155  INFO 23392 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.Englilsh.EnglishApplication: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.context.properties.EnableConfigurationProperties.value()
+2024-03-27 19:32:57.158  WARN 23392 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.Englilsh.EnglishApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/Englilsh/EnglishApplication.class] cannot be opened because it does not exist
+2024-03-27 19:32:57.162 ERROR 23392 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.Englilsh.EnglishApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/Englilsh/EnglishApplication.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.Englilsh.EnglishApplication.main(EnglishApplication.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/Englilsh/EnglishApplication.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:682)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:651)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:629)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:240)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 18 common frames omitted
+
+2024-03-27 19:33:01.444  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 23392 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:33:01.444  INFO 23392 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:33:01.844  WARN 23392 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 19:33:01.845  INFO 23392 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 19:33:01.845  INFO 23392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 399 ms
+2024-03-27 19:33:02.114  WARN 23392 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+2024-03-27 19:33:02.118  INFO 23392 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-27 19:33:02.118 ERROR 23392 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.Englilsh.EnglishApplication.main(EnglishApplication.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.createDeploymentManager(UndertowServletWebServerFactory.java:279)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.getWebServer(UndertowServletWebServerFactory.java:206)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:676)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:252)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:226)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory$Initializer.onStartup(UndertowServletWebServerFactory.java:592)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:203)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 61 common frames omitted
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:550)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:363)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108)
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319)
+	at org.springframework.cglib.reflect.FastClass$Generator.create(FastClass.java:65)
+	at org.springframework.cglib.proxy.MethodProxy.helper(MethodProxy.java:135)
+	at org.springframework.cglib.proxy.MethodProxy.init(MethodProxy.java:76)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:242)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.Englilsh.configuration.spring.mvc.WebMvcConfiguration$$EnhancerBySpringCGLIB$$d911ea6a.mvcContentNegotiationManager(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: java.lang.LinkageError: loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at java.base/java.lang.ClassLoader.defineClass0(Native Method)
+	at java.base/java.lang.System$2.defineClass(System.java:2307)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2439)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2416)
+	at java.base/java.lang.invoke.MethodHandles$Lookup.defineClass(MethodHandles.java:1843)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:547)
+	... 82 common frames omitted
+
+2024-03-27 19:38:26.485  INFO 11576 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 11576 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:38:26.487  INFO 11576 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:38:26.522  INFO 11576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:38:26.522  INFO 11576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:38:27.378  WARN 11576 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 19:38:27.390  INFO 11576 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 19:38:27.390  INFO 11576 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 868 ms
+2024-03-27 19:38:27.984  INFO 11576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ba4501b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e081b0, org.springframework.security.web.header.HeaderWriterFilter@11aefed7, org.springframework.web.filter.CorsFilter@128a0c62, org.springframework.security.web.authentication.logout.LogoutFilter@7db62f01, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@7d6d49a2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44299d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2333ca50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37666c38, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@71dbccc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50be6167, org.springframework.security.web.session.SessionManagementFilter@71605979, org.springframework.security.web.access.ExceptionTranslationFilter@6d2481b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37a75645]
+2024-03-27 19:38:28.254  INFO 11576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-27 19:38:28.285  INFO 11576 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-27 19:38:28.290  INFO 11576 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-27 19:38:28.357  INFO 11576 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-27 19:38:28.359  INFO 11576 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.168 seconds (JVM running for 2.735)
+2024-03-27 19:38:37.927  INFO 11576 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 19:38:37.928  INFO 11576 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-27 19:38:37.935  INFO 11576 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-03-27 19:38:49.840  INFO 11576 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-27 19:38:49.971  INFO 11576 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-27 19:38:49.977 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:38:49.996 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-27 19:38:50.064 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:38:50.090 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:38:50.091 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-27 19:38:50.092 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:38:50.105 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-03-27 19:38:50.107 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-03-27 19:38:50.092(Timestamp)
+2024-03-27 19:38:50.119 DEBUG 11576 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 19:38:50.176 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-03-27 19:38:50.176 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : ==> Parameters: 
+2024-03-27 19:38:50.184 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : <==      Total: 1
+2024-03-27 19:38:50.184 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-03-27 19:38:50.185 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : ==> Parameters: 
+2024-03-27 19:38:50.189 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : <==      Total: 1
+2024-03-27 19:38:50.189 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-03-27 19:38:50.190 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-27 19:38:50.196 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-27 19:38:50.196 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-03-27 19:38:50.196 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-27 19:38:50.201 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-27 19:38:50.204 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-27 19:38:50.204 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-27 19:38:50.208 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : <==      Total: 4
+2024-03-27 19:38:50.210 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-27 19:38:50.211 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-27 19:38:50.211 DEBUG 11576 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : <==      Total: 0
+2024-03-27 19:40:01.298 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.r.UserMapper.userPage_COUNT        : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2024-03-27 19:40:01.298 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.r.UserMapper.userPage_COUNT        : ==> Parameters: 1(Integer)
+2024-03-27 19:40:01.300 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.r.UserMapper.userPage_COUNT        : <==      Total: 1
+2024-03-27 19:40:01.302 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.repository.UserMapper.userPage     : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2024-03-27 19:40:01.302 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.repository.UserMapper.userPage     : ==> Parameters: 1(Integer), 10(Integer)
+2024-03-27 19:40:01.304 DEBUG 11576 --- [XNIO-1 task-4] r.c.E.repository.UserMapper.userPage     : <==      Total: 3
+2024-03-27 19:40:07.744 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.r.UserMapper.userPage_COUNT        : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2024-03-27 19:40:07.744 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.r.UserMapper.userPage_COUNT        : ==> Parameters: 3(Integer)
+2024-03-27 19:40:07.744 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.r.UserMapper.userPage_COUNT        : <==      Total: 1
+2024-03-27 19:40:07.745 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.repository.UserMapper.userPage     : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2024-03-27 19:40:07.745 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.repository.UserMapper.userPage     : ==> Parameters: 3(Integer), 10(Integer)
+2024-03-27 19:40:07.746 DEBUG 11576 --- [XNIO-1 task-5] r.c.E.repository.UserMapper.userPage     : <==      Total: 1
+2024-03-27 19:40:11.022 DEBUG 11576 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-27 19:40:11.022 DEBUG 11576 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-27 19:40:11.038 DEBUG 11576 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 1
+2024-03-27 19:40:11.338 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2024-03-27 19:40:11.338 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : ==> Parameters: 
+2024-03-27 19:40:11.339 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : <==      Total: 1
+2024-03-27 19:40:11.339 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.repository.ExamPaperMapper.page    : ==>  Preparing: SELECT id, name, subject_id, paper_type, grade_level, score, question_count, suggest_time, limit_start_time, limit_end_time, frame_text_content_id, create_user, create_time, deleted, task_exam_id FROM t_exam_paper WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-27 19:40:11.340 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.repository.ExamPaperMapper.page    : ==> Parameters: 10(Integer)
+2024-03-27 19:40:11.341 DEBUG 11576 --- [XNIO-1 task-7] r.c.E.repository.ExamPaperMapper.page    : <==      Total: 1
+2024-03-27 19:40:14.631 DEBUG 11576 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-27 19:40:14.632 DEBUG 11576 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-27 19:40:14.633 DEBUG 11576 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 1
+2024-03-27 19:40:14.634 DEBUG 11576 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2024-03-27 19:40:14.634 DEBUG 11576 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : ==> Parameters: 
+2024-03-27 19:40:14.648 DEBUG 11576 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : <==      Total: 1
+2024-03-27 19:40:14.649 DEBUG 11576 --- [XNIO-1 task-9] r.c.E.repository.QuestionMapper.page     : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-27 19:40:14.649 DEBUG 11576 --- [XNIO-1 task-9] r.c.E.repository.QuestionMapper.page     : ==> Parameters: 10(Integer)
+2024-03-27 19:40:14.679 ERROR 11576 --- [XNIO-1 task-9] c.E.c.spring.exception.ExceptionHandle   : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at jdk.proxy2/jdk.proxy2.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at jdk.proxy3/jdk.proxy3.$Proxy75.page(Unknown Source)
+	at com.Englilsh.service.impl.QuestionServiceImpl.lambda$page$0(QuestionServiceImpl.java:51)
+	at com.github.pagehelper.Page.doSelectPageInfo(Page.java:353)
+	at com.Englilsh.service.impl.QuestionServiceImpl.page(QuestionServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at jdk.proxy3/jdk.proxy3.$Proxy78.page(Unknown Source)
+	at com.Englilsh.controller.admin.QuestionController.pageList(QuestionController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'difficult' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.util.ExecutorUtil.pageQuery(ExecutorUtil.java:177)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:104)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy102.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 111 common frames omitted
+
+2024-03-27 19:43:11.244  INFO 11576 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-27 19:43:11.252  INFO 11576 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-27 19:43:11.253  INFO 11576 --- [Thread-7] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-27 19:43:14.379  INFO 6816 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 6816 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:43:14.382  INFO 6816 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:43:14.414  INFO 6816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:43:14.414  INFO 6816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:43:15.251  WARN 6816 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 19:43:15.264  INFO 6816 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 19:43:15.264  INFO 6816 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 850 ms
+2024-03-27 19:43:15.858  INFO 6816 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f77230c, org.springframework.security.web.context.SecurityContextPersistenceFilter@69c4bb21, org.springframework.security.web.header.HeaderWriterFilter@6ee78b0, org.springframework.web.filter.CorsFilter@15fabed9, org.springframework.security.web.authentication.logout.LogoutFilter@27f30d59, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@41a89f4e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6497ab6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38ebc6b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1061c6f1, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6387865b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1555a9f, org.springframework.security.web.session.SessionManagementFilter@5c646f84, org.springframework.security.web.access.ExceptionTranslationFilter@1f1131eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4653fca7]
+2024-03-27 19:43:16.125  INFO 6816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-27 19:43:16.163  INFO 6816 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-27 19:43:16.168  INFO 6816 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-27 19:43:16.233  INFO 6816 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-27 19:43:16.235  INFO 6816 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.156 seconds (JVM running for 2.699)
+2024-03-27 19:43:55.970  INFO 6816 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 19:43:55.970  INFO 6816 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-27 19:43:55.974  INFO 6816 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-27 19:43:56.049  INFO 6816 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-27 19:43:56.138  INFO 6816 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-27 19:43:56.167 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2024-03-27 19:43:56.186 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.page_COUNT       : ==> Parameters: 
+2024-03-27 19:43:56.208 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.page_COUNT       : <==      Total: 1
+2024-03-27 19:43:56.211 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.repository.ExamPaperMapper.page    : ==>  Preparing: SELECT id, name, subject_id, paper_type, grade_level, score, question_count, suggest_time, limit_start_time, limit_end_time, frame_text_content_id, create_user, create_time, deleted, task_exam_id FROM t_exam_paper WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-27 19:43:56.211 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.repository.ExamPaperMapper.page    : ==> Parameters: 10(Integer)
+2024-03-27 19:43:56.213 DEBUG 6816 --- [XNIO-1 task-2] r.c.E.repository.ExamPaperMapper.page    : <==      Total: 1
+2024-03-27 19:44:03.598 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:44:03.598 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-27 19:44:03.599 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:44:03.617 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:44:03.617 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-27 19:44:03.618 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:44:03.620 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-03-27 19:44:03.622 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.U.insertSelective                : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-03-27 19:44:03.619(Timestamp)
+2024-03-27 19:44:03.635 DEBUG 6816 --- [XNIO-1 task-3] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 19:44:04.000 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-03-27 19:44:04.001 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : ==> Parameters: 
+2024-03-27 19:44:04.001 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : <==      Total: 1
+2024-03-27 19:44:04.002 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-03-27 19:44:04.002 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : ==> Parameters: 
+2024-03-27 19:44:04.003 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : <==      Total: 1
+2024-03-27 19:44:04.003 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-03-27 19:44:04.003 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-27 19:44:04.004 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-27 19:44:04.004 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-03-27 19:44:04.005 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-27 19:44:04.006 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-27 19:44:04.008 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-27 19:44:04.008 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-27 19:44:04.011 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : <==      Total: 4
+2024-03-27 19:44:04.013 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-27 19:44:04.013 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-27 19:44:04.014 DEBUG 6816 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : <==      Total: 0
+2024-03-27 19:44:12.616 DEBUG 6816 --- [XNIO-1 task-5] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-27 19:44:12.617 DEBUG 6816 --- [XNIO-1 task-5] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-27 19:44:12.618 DEBUG 6816 --- [XNIO-1 task-5] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 1
+2024-03-27 19:44:12.929 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.QuestionMapper.page_COUNT        : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2024-03-27 19:44:12.929 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.QuestionMapper.page_COUNT        : ==> Parameters: 
+2024-03-27 19:44:12.929 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.QuestionMapper.page_COUNT        : <==      Total: 1
+2024-03-27 19:44:12.930 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.repository.QuestionMapper.page     : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-27 19:44:12.930 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.repository.QuestionMapper.page     : ==> Parameters: 10(Integer)
+2024-03-27 19:44:12.933 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.repository.QuestionMapper.page     : <==      Total: 2
+2024-03-27 19:44:12.936 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2024-03-27 19:44:12.936 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : ==> Parameters: 2(Integer)
+2024-03-27 19:44:12.948 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : <==      Total: 1
+2024-03-27 19:44:12.953 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : ==>  Preparing: select id, content, create_time from t_text_content where id = ? 
+2024-03-27 19:44:12.953 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : ==> Parameters: 1(Integer)
+2024-03-27 19:44:12.955 DEBUG 6816 --- [XNIO-1 task-6] r.c.E.r.T.selectByPrimaryKey             : <==      Total: 1
+2024-03-27 19:44:19.640 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.r.SubjectMapper.page_COUNT         : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-03-27 19:44:19.640 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.r.SubjectMapper.page_COUNT         : ==> Parameters: 
+2024-03-27 19:44:19.641 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.r.SubjectMapper.page_COUNT         : <==      Total: 1
+2024-03-27 19:44:19.642 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.repository.SubjectMapper.page      : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-27 19:44:19.643 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.repository.SubjectMapper.page      : ==> Parameters: 10(Integer)
+2024-03-27 19:44:19.643 DEBUG 6816 --- [XNIO-1 task-7] r.c.E.repository.SubjectMapper.page      : <==      Total: 1
+2024-03-27 19:44:22.090 DEBUG 6816 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.page_COUNT        : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2024-03-27 19:44:22.091 DEBUG 6816 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.page_COUNT        : ==> Parameters: 
+2024-03-27 19:44:22.098 DEBUG 6816 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.page_COUNT        : <==      Total: 1
+2024-03-27 19:44:24.053 DEBUG 6816 --- [XNIO-1 task-9] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-27 19:44:24.053 DEBUG 6816 --- [XNIO-1 task-9] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-27 19:44:24.054 DEBUG 6816 --- [XNIO-1 task-9] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 1
+2024-03-27 19:44:27.786 DEBUG 6816 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-27 19:44:27.787 DEBUG 6816 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-27 19:44:27.788 DEBUG 6816 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 1
+2024-03-27 19:44:28.097 DEBUG 6816 --- [XNIO-1 task-11] r.c.E.r.E.adminPage_COUNT                : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2024-03-27 19:44:28.097 DEBUG 6816 --- [XNIO-1 task-11] r.c.E.r.E.adminPage_COUNT                : ==> Parameters: 
+2024-03-27 19:44:28.097 DEBUG 6816 --- [XNIO-1 task-11] r.c.E.r.E.adminPage_COUNT                : <==      Total: 1
+2024-03-27 19:44:31.875 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.MessageMapper.page_COUNT         : ==>  Preparing: SELECT count(0) FROM t_message 
+2024-03-27 19:44:31.875 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.MessageMapper.page_COUNT         : ==> Parameters: 
+2024-03-27 19:44:31.883 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.MessageMapper.page_COUNT         : <==      Total: 1
+2024-03-27 19:44:31.884 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.repository.MessageMapper.page      : ==>  Preparing: SELECT id, title, content, create_time, send_user_id, send_user_name, send_real_name, receive_user_count, read_count FROM t_message order by id desc LIMIT ? 
+2024-03-27 19:44:31.884 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.repository.MessageMapper.page      : ==> Parameters: 10(Integer)
+2024-03-27 19:44:31.885 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.repository.MessageMapper.page      : <==      Total: 1
+2024-03-27 19:44:31.886 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.M.selectByMessageIds             : ==>  Preparing: select id, message_id, receive_user_id, receive_user_name, receive_real_name, readed, create_time, read_time from t_message_user where message_id in ( ? ) 
+2024-03-27 19:44:31.886 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.M.selectByMessageIds             : ==> Parameters: 1(Integer)
+2024-03-27 19:44:31.892 DEBUG 6816 --- [XNIO-1 task-12] r.c.E.r.M.selectByMessageIds             : <==      Total: 1
+2024-03-27 19:44:37.154 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page_COUNT    : ==>  Preparing: SELECT count(0) FROM t_user_event_log 
+2024-03-27 19:44:37.154 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page_COUNT    : ==> Parameters: 
+2024-03-27 19:44:37.155 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page_COUNT    : <==      Total: 1
+2024-03-27 19:44:37.156 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page          : ==>  Preparing: SELECT id, user_id, user_name, real_name, content, create_time FROM t_user_event_log order by id desc LIMIT ? 
+2024-03-27 19:44:37.156 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page          : ==> Parameters: 10(Integer)
+2024-03-27 19:44:37.157 DEBUG 6816 --- [XNIO-1 task-13] r.c.E.r.UserEventLogMapper.page          : <==      Total: 10
+2024-03-27 19:46:53.472 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:46:53.472 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 李长贵(String)
+2024-03-27 19:46:53.473 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:46:53.477 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:46:53.478 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 李长贵(String)
+2024-03-27 19:46:53.479 DEBUG 6816 --- [XNIO-1 task-18] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:06.355 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.r.UserMapper.userPage_COUNT        : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2024-03-27 19:47:06.355 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.r.UserMapper.userPage_COUNT        : ==> Parameters: 1(Integer)
+2024-03-27 19:47:06.355 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.r.UserMapper.userPage_COUNT        : <==      Total: 1
+2024-03-27 19:47:06.356 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.repository.UserMapper.userPage     : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2024-03-27 19:47:06.356 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.repository.UserMapper.userPage     : ==> Parameters: 1(Integer), 10(Integer)
+2024-03-27 19:47:06.357 DEBUG 6816 --- [XNIO-1 task-19] r.c.E.repository.UserMapper.userPage     : <==      Total: 3
+2024-03-27 19:47:16.781 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:16.781 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:16.782 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:16.785 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:16.785 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:16.786 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:16.786 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, content, create_time ) values ( ?, ?, ?, ? ) 
+2024-03-27 19:47:16.787 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.U.insertSelective                : ==> Parameters: 3(Integer), 王富贵(String), 王富贵 登录了学之思开源考试系统(String), 2024-03-27 19:47:16.786(Timestamp)
+2024-03-27 19:47:16.790 DEBUG 6816 --- [XNIO-1 task-20] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 19:47:17.047 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:17.047 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:17.048 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:17.048 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 19:47:17.049 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 19:47:17.049 DEBUG 6816 --- [XNIO-1 task-21] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 19:47:17.144 DEBUG 6816 --- [XNIO-1 task-22] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:17.144 DEBUG 6816 --- [XNIO-1 task-22] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:17.146 DEBUG 6816 --- [XNIO-1 task-22] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:17.147 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:17.149 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:17.150 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:17.150 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:17.151 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:17.151 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:47:17.151 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:47:17.152 DEBUG 6816 --- [XNIO-1 task-24] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:47:17.154 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:17.157 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:47:17.158 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:47:17.158 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:47:17.159 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:47:17.159 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:47:17.159(Timestamp)
+2024-03-27 19:47:17.160 DEBUG 6816 --- [XNIO-1 task-23] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:47:26.459 DEBUG 6816 --- [XNIO-1 task-25] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:47:26.460 DEBUG 6816 --- [XNIO-1 task-25] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:47:26.460 DEBUG 6816 --- [XNIO-1 task-25] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:47:26.813 DEBUG 6816 --- [XNIO-1 task-26] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:47:26.814 DEBUG 6816 --- [XNIO-1 task-26] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:47:26.814 DEBUG 6816 --- [XNIO-1 task-26] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:47:27.922 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:27.923 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:27.924 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:27.925 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 19:47:27.925 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:47:27.926 DEBUG 6816 --- [XNIO-1 task-27] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:47:33.203 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:33.203 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:33.204 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:33.205 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:47:33.205 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:47:33.205 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:47:33.206 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:47:33.206 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:47:33.205(Timestamp)
+2024-03-27 19:47:33.207 DEBUG 6816 --- [XNIO-1 task-28] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:47:33.504 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:33.504 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:33.506 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:33.506 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:47:33.506 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:47:33.506 DEBUG 6816 --- [XNIO-1 task-29] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:47:38.244 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:47:38.244 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:47:38.245 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:47:38.247 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 19:47:38.247 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:47:38.248 DEBUG 6816 --- [XNIO-1 task-30] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:47:40.348 DEBUG 6816 --- [XNIO-1 task-31] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:47:40.349 DEBUG 6816 --- [XNIO-1 task-31] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:47:40.349 DEBUG 6816 --- [XNIO-1 task-31] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:47:40.667 DEBUG 6816 --- [XNIO-1 task-32] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:47:40.668 DEBUG 6816 --- [XNIO-1 task-32] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:47:40.668 DEBUG 6816 --- [XNIO-1 task-32] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:48:09.276 DEBUG 6816 --- [XNIO-1 task-33] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:48:09.276 DEBUG 6816 --- [XNIO-1 task-33] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:48:09.277 DEBUG 6816 --- [XNIO-1 task-33] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:48:09.297 DEBUG 6816 --- [XNIO-1 task-34] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:48:09.297 DEBUG 6816 --- [XNIO-1 task-34] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:48:09.298 DEBUG 6816 --- [XNIO-1 task-34] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:48:11.093 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:48:11.093 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:48:11.093 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:48:11.093 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:48:11.094 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:48:11.094 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:48:11.094 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:48:11.095 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:48:11.095 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:48:11.095 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:48:11.095 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:48:11.095 DEBUG 6816 --- [XNIO-1 task-36] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:48:11.096 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:48:11.096 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:48:11.095(Timestamp)
+2024-03-27 19:48:11.097 DEBUG 6816 --- [XNIO-1 task-35] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:49:15.987 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:15.988 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:15.989 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:15.990 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 19:49:15.990 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:49:15.991 DEBUG 6816 --- [XNIO-1 task-37] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:49:52.313 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:52.313 DEBUG 6816 --- [XNIO-1 task-39] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:52.313 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:52.313 DEBUG 6816 --- [XNIO-1 task-39] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:52.314 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:52.314 DEBUG 6816 --- [XNIO-1 task-39] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:52.315 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 19:49:52.315 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 19:49:52.316 DEBUG 6816 --- [XNIO-1 task-38] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 19:49:52.325 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:52.325 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:52.325 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:52.325 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:52.326 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:52.326 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-41] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:49:52.327 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:49:52.328 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:49:52.328 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:49:52.327(Timestamp)
+2024-03-27 19:49:52.329 DEBUG 6816 --- [XNIO-1 task-40] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:49:55.191 DEBUG 6816 --- [XNIO-1 task-42] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:49:55.191 DEBUG 6816 --- [XNIO-1 task-42] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:49:55.192 DEBUG 6816 --- [XNIO-1 task-42] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:49:55.220 DEBUG 6816 --- [XNIO-1 task-43] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:49:55.220 DEBUG 6816 --- [XNIO-1 task-43] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:49:55.221 DEBUG 6816 --- [XNIO-1 task-43] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:49:56.517 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:49:56.518 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:49:56.518 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:49:56.519 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 19:49:56.519 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:49:56.520 DEBUG 6816 --- [XNIO-1 task-44] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:50:58.624 DEBUG 6816 --- [XNIO-1 task-46] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:50:58.624 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:50:58.624 DEBUG 6816 --- [XNIO-1 task-46] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:50:58.624 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:50:58.626 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:50:58.627 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 19:50:58.627 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 19:50:58.627 DEBUG 6816 --- [XNIO-1 task-46] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:50:58.627 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:50:58.628 DEBUG 6816 --- [XNIO-1 task-45] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 19:50:58.628 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:50:58.628 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:50:58.628 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:50:58.631 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:50:58.631 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:50:58.632 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:50:58.632 DEBUG 6816 --- [XNIO-1 task-48] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:50:58.643 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:50:58.644 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:50:58.644 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:50:58.645 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:50:58.646 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:50:58.646 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:50:58.646(Timestamp)
+2024-03-27 19:50:58.647 DEBUG 6816 --- [XNIO-1 task-47] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:51:03.072 DEBUG 6816 --- [XNIO-1 task-49] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:51:03.072 DEBUG 6816 --- [XNIO-1 task-49] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:51:03.072 DEBUG 6816 --- [XNIO-1 task-49] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:51:03.092 DEBUG 6816 --- [XNIO-1 task-50] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:51:03.092 DEBUG 6816 --- [XNIO-1 task-50] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:51:03.093 DEBUG 6816 --- [XNIO-1 task-50] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:51:39.284 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:39.284 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:39.285 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:39.286 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 19:51:39.286 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 19:51:39.287 DEBUG 6816 --- [XNIO-1 task-51] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 19:51:39.401 DEBUG 6816 --- [XNIO-1 task-52] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:39.402 DEBUG 6816 --- [XNIO-1 task-52] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:39.403 DEBUG 6816 --- [XNIO-1 task-52] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:39.463 DEBUG 6816 --- [XNIO-1 task-53] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:51:39.463 DEBUG 6816 --- [XNIO-1 task-53] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:51:39.463 DEBUG 6816 --- [XNIO-1 task-53] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:51:39.482 DEBUG 6816 --- [XNIO-1 task-54] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:51:39.483 DEBUG 6816 --- [XNIO-1 task-54] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:51:39.483 DEBUG 6816 --- [XNIO-1 task-54] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:51:42.280 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:42.281 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:42.282 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:42.283 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 19:51:42.283 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:51:42.283 DEBUG 6816 --- [XNIO-1 task-55] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:51:43.462 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:43.462 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:43.463 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:43.464 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_question_customer_answer WHERE do_right = FALSE AND create_user = ? 
+2024-03-27 19:51:43.465 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 19:51:43.466 DEBUG 6816 --- [XNIO-1 task-56] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:51:52.294 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:52.294 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:52.295 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:52.295 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:51:52.296 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:51:52.296 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 19:51:52.296 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 19:51:52.297 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 19:51:52.297(Timestamp)
+2024-03-27 19:51:52.298 DEBUG 6816 --- [XNIO-1 task-58] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 19:51:52.298 DEBUG 6816 --- [XNIO-1 task-57] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 19:51:55.529 DEBUG 6816 --- [XNIO-1 task-59] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:51:55.529 DEBUG 6816 --- [XNIO-1 task-59] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:51:55.529 DEBUG 6816 --- [XNIO-1 task-59] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:51:55.541 DEBUG 6816 --- [XNIO-1 task-60] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:51:55.541 DEBUG 6816 --- [XNIO-1 task-60] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:51:55.542 DEBUG 6816 --- [XNIO-1 task-60] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:51:57.251 DEBUG 6816 --- [XNIO-1 task-61] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:51:57.251 DEBUG 6816 --- [XNIO-1 task-61] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:51:57.252 DEBUG 6816 --- [XNIO-1 task-61] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:52:01.066 DEBUG 6816 --- [XNIO-1 task-62] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:52:01.066 DEBUG 6816 --- [XNIO-1 task-62] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:52:01.067 DEBUG 6816 --- [XNIO-1 task-62] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:54:07.577 DEBUG 6816 --- [XNIO-1 task-63] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:54:07.577 DEBUG 6816 --- [XNIO-1 task-63] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 4(Integer)
+2024-03-27 19:54:07.578 DEBUG 6816 --- [XNIO-1 task-63] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:54:09.399 DEBUG 6816 --- [XNIO-1 task-64] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:54:09.399 DEBUG 6816 --- [XNIO-1 task-64] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:54:09.400 DEBUG 6816 --- [XNIO-1 task-64] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:55:07.029 DEBUG 6816 --- [XNIO-1 task-67] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 19:55:07.030 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:55:07.030 DEBUG 6816 --- [XNIO-1 task-67] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 19:55:07.030 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:55:07.031 DEBUG 6816 --- [XNIO-1 task-67] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 19:55:07.031 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:55:07.031 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 19:55:07.031 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 19:55:07.031 DEBUG 6816 --- [XNIO-1 task-66] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 19:55:07.032 DEBUG 6816 --- [XNIO-1 task-66] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 19:55:07.032 DEBUG 6816 --- [XNIO-1 task-65] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 19:55:07.033 DEBUG 6816 --- [XNIO-1 task-66] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 19:55:07.069 DEBUG 6816 --- [XNIO-1 task-68] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 19:55:07.069 DEBUG 6816 --- [XNIO-1 task-68] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 19:55:07.071 DEBUG 6816 --- [XNIO-1 task-68] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 19:59:53.406  INFO 6816 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-27 19:59:53.410  INFO 6816 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-27 19:59:53.411  INFO 6816 --- [Thread-7] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-27 19:59:55.835  INFO 15044 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 15044 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 19:59:55.837  INFO 15044 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 19:59:55.870  INFO 15044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:59:55.870  INFO 15044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:59:56.832  WARN 15044 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 19:59:56.846  INFO 15044 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 19:59:56.846  INFO 15044 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 976 ms
+2024-03-27 19:59:57.527  INFO 15044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60446653, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ea07b1, org.springframework.security.web.header.HeaderWriterFilter@597d8cfb, org.springframework.web.filter.CorsFilter@8a79cc, org.springframework.security.web.authentication.logout.LogoutFilter@2ef59789, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@5c86866, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@775a0496, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c4e66d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62323616, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@72e9ac3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@595a1d6b, org.springframework.security.web.session.SessionManagementFilter@74a7c779, org.springframework.security.web.access.ExceptionTranslationFilter@5c6ef3cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7677613e]
+2024-03-27 19:59:57.820  INFO 15044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-27 19:59:57.856  INFO 15044 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-27 19:59:57.860  INFO 15044 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-27 19:59:57.942  INFO 15044 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-27 19:59:57.944  INFO 15044 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.431 seconds (JVM running for 3.542)
+2024-03-27 20:00:16.963  INFO 15044 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 20:00:16.964  INFO 15044 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-27 20:00:16.970  INFO 15044 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-03-27 20:00:27.691  INFO 15044 --- [XNIO-1 task-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-27 20:00:27.820  INFO 15044 --- [XNIO-1 task-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-27 20:00:27.825 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:27.844 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:27.862 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:27.884 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:27.884 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:27.886 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:27.898 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, content, create_time ) values ( ?, ?, ?, ? ) 
+2024-03-27 20:00:27.900 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : ==> Parameters: 3(Integer), 王富贵(String), 王富贵 登录了学之思开源考试系统(String), 2024-03-27 20:00:27.886(Timestamp)
+2024-03-27 20:00:27.905 DEBUG 15044 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 20:00:27.967 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:27.967 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:27.969 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:27.969 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 20:00:27.969 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 20:00:27.971 DEBUG 15044 --- [XNIO-1 task-5] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 20:00:28.272 DEBUG 15044 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:28.272 DEBUG 15044 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:28.272 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:28.272 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:28.274 DEBUG 15044 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:28.280 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:00:28.281 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:00:28.283 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:28.284 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 20:00:28.285 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 20:00:28.286 DEBUG 15044 --- [XNIO-1 task-8] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 20:00:28.286 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:00:28.289 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 20:00:28.289 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 20:00:28.291 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 20:00:28.292 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 20:00:28.293 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 20:00:28.292(Timestamp)
+2024-03-27 20:00:28.294 DEBUG 15044 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 20:00:34.728 DEBUG 15044 --- [XNIO-1 task-9] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:00:34.729 DEBUG 15044 --- [XNIO-1 task-9] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:00:34.732 DEBUG 15044 --- [XNIO-1 task-9] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:01:16.336  INFO 15044 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-27 20:01:16.341  INFO 15044 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-27 20:01:16.342  INFO 15044 --- [Thread-7] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-27 20:01:18.182  INFO 8068 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 8068 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-27 20:01:18.184  INFO 8068 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-27 20:01:18.220  INFO 8068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 20:01:18.220  INFO 8068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 20:01:19.184  WARN 8068 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-27 20:01:19.199  INFO 8068 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-27 20:01:19.199  INFO 8068 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 978 ms
+2024-03-27 20:01:19.855  INFO 8068 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c049eab, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ee1cadd, org.springframework.security.web.header.HeaderWriterFilter@645795ac, org.springframework.web.filter.CorsFilter@1b190073, org.springframework.security.web.authentication.logout.LogoutFilter@6166e74b, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@25b4fb83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47ad1e58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38b4a11b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@676168bb, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4e59fd48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a0ff6ef, org.springframework.security.web.session.SessionManagementFilter@2e3f7849, org.springframework.security.web.access.ExceptionTranslationFilter@26c67aa2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16a6986e]
+2024-03-27 20:01:20.139  INFO 8068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-27 20:01:20.186  INFO 8068 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-27 20:01:20.192  INFO 8068 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-27 20:01:20.265  INFO 8068 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-27 20:01:20.267  INFO 8068 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.425 seconds (JVM running for 3.138)
+2024-03-27 20:02:32.469  INFO 8068 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 20:02:32.469  INFO 8068 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-27 20:02:32.474  INFO 8068 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-27 20:02:36.713  INFO 8068 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-27 20:02:36.835  INFO 8068 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-27 20:02:36.848 DEBUG 8068 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:02:36.870 DEBUG 8068 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:02:36.890 DEBUG 8068 --- [XNIO-1 task-2] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:04:33.783  WARN 8068 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s947ms684µs200ns).
+2024-03-27 20:06:24.655  WARN 8068 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s872ms533µs800ns).
+2024-03-27 20:06:24.699 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:24.700 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:24.704 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:24.724 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:24.724 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:24.725 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:24.738 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, content, create_time ) values ( ?, ?, ?, ? ) 
+2024-03-27 20:06:24.740 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : ==> Parameters: 3(Integer), 王富贵(String), 王富贵 登录了学之思开源考试系统(String), 2024-03-27 20:06:24.726(Timestamp)
+2024-03-27 20:06:24.744 DEBUG 8068 --- [XNIO-1 task-4] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 20:06:29.679 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:29.680 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:29.681 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:29.684 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:29.684 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:29.686 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:29.686 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, content, create_time ) values ( ?, ?, ?, ? ) 
+2024-03-27 20:06:29.687 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.U.insertSelective                : ==> Parameters: 3(Integer), 王富贵(String), 王富贵 登录了学之思开源考试系统(String), 2024-03-27 20:06:29.686(Timestamp)
+2024-03-27 20:06:29.700 DEBUG 8068 --- [XNIO-1 task-5] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-27 20:06:29.977 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:29.978 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:29.979 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:29.980 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.MessageUserMapper.unReadCount    : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-03-27 20:06:29.980 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.MessageUserMapper.unReadCount    : ==> Parameters: 3(Integer)
+2024-03-27 20:06:29.981 DEBUG 8068 --- [XNIO-1 task-6] r.c.E.r.MessageUserMapper.unReadCount    : <==      Total: 1
+2024-03-27 20:06:30.026 DEBUG 8068 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:30.026 DEBUG 8068 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:30.028 DEBUG 8068 --- [XNIO-1 task-7] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:30.282 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:30.282 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:30.283 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:06:30.284 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:06:30.284 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:30.288 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-03-27 20:06:30.288 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 1(Integer), null
+2024-03-27 20:06:30.289 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:06:30.290 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 20:06:30.290 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-03-27 20:06:30.290 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.TaskExamMapper.getByGradeLevel   : ==> Parameters: null
+2024-03-27 20:06:30.291 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-03-27 20:06:30.292 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : ==> Parameters: 4(Integer), null, 2024-03-27 20:06:30.29(Timestamp)
+2024-03-27 20:06:30.292 DEBUG 8068 --- [XNIO-1 task-8] r.c.E.r.ExamPaperMapper.indexPaper       : <==      Total: 0
+2024-03-27 20:06:30.292 DEBUG 8068 --- [XNIO-1 task-9] r.c.E.r.TaskExamMapper.getByGradeLevel   : <==      Total: 0
+2024-03-27 20:09:10.811  WARN 8068 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m46s156ms354µs500ns).
+2024-03-27 20:09:10.814 DEBUG 8068 --- [XNIO-1 task-10] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:09:10.814 DEBUG 8068 --- [XNIO-1 task-10] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:09:10.816 DEBUG 8068 --- [XNIO-1 task-10] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:09:21.148 DEBUG 8068 --- [XNIO-1 task-11] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:09:21.148 DEBUG 8068 --- [XNIO-1 task-11] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:09:21.149 DEBUG 8068 --- [XNIO-1 task-11] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:09:21.524 DEBUG 8068 --- [XNIO-1 task-12] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:09:21.525 DEBUG 8068 --- [XNIO-1 task-12] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 20:09:21.526 DEBUG 8068 --- [XNIO-1 task-12] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:09:23.688 DEBUG 8068 --- [XNIO-1 task-13] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:09:23.689 DEBUG 8068 --- [XNIO-1 task-13] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 20:09:23.690 DEBUG 8068 --- [XNIO-1 task-13] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:09:25.918 DEBUG 8068 --- [XNIO-1 task-14] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:09:25.919 DEBUG 8068 --- [XNIO-1 task-14] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 20:09:25.919 DEBUG 8068 --- [XNIO-1 task-14] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:09:32.454 DEBUG 8068 --- [XNIO-1 task-15] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:09:32.455 DEBUG 8068 --- [XNIO-1 task-15] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 4(Integer)
+2024-03-27 20:09:32.456 DEBUG 8068 --- [XNIO-1 task-15] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:09:34.566 DEBUG 8068 --- [XNIO-1 task-16] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:09:34.566 DEBUG 8068 --- [XNIO-1 task-16] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 4(Integer)
+2024-03-27 20:09:34.566 DEBUG 8068 --- [XNIO-1 task-16] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:12:29.629 DEBUG 8068 --- [XNIO-1 task-17] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:12:29.629 DEBUG 8068 --- [XNIO-1 task-17] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:12:29.630 DEBUG 8068 --- [XNIO-1 task-17] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:12:29.649 DEBUG 8068 --- [XNIO-1 task-18] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:12:29.650 DEBUG 8068 --- [XNIO-1 task-18] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 20:12:29.650 DEBUG 8068 --- [XNIO-1 task-18] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:12:31.300 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-27 20:12:31.301 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: 王富贵(String)
+2024-03-27 20:12:31.302 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-27 20:12:31.304 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-03-27 20:12:31.304 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 3(Integer)
+2024-03-27 20:12:31.306 DEBUG 8068 --- [XNIO-1 task-19] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:12:35.044 DEBUG 8068 --- [XNIO-1 task-20] r.c.E.r.ExamPaperMapper.getAllLevel      : ==>  Preparing: SELECT grade_level from t_exam_paper where deleted=0 
+2024-03-27 20:12:35.044 DEBUG 8068 --- [XNIO-1 task-20] r.c.E.r.ExamPaperMapper.getAllLevel      : ==> Parameters: 
+2024-03-27 20:12:35.045 DEBUG 8068 --- [XNIO-1 task-20] r.c.E.r.ExamPaperMapper.getAllLevel      : <==      Total: 1
+2024-03-27 20:12:35.362 DEBUG 8068 --- [XNIO-1 task-21] r.c.E.r.E.studentPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 AND subject_id = ? AND paper_type = ? 
+2024-03-27 20:12:35.362 DEBUG 8068 --- [XNIO-1 task-21] r.c.E.r.E.studentPage_COUNT              : ==> Parameters: 1(Integer), 1(Integer)
+2024-03-27 20:12:35.363 DEBUG 8068 --- [XNIO-1 task-21] r.c.E.r.E.studentPage_COUNT              : <==      Total: 1
+2024-03-27 20:14:41.325  INFO 8068 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-27 20:14:41.329  INFO 8068 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-27 20:14:41.331  INFO 8068 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

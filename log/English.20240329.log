@@ -1,0 +1,678 @@
+2024-03-29 17:20:13.862  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 11132 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-29 17:20:13.864  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-29 17:20:13.894  INFO 11132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-29 17:20:13.894  INFO 11132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-29 17:20:14.908  WARN 11132 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-29 17:20:14.925  INFO 11132 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-29 17:20:14.925  INFO 11132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1031 ms
+2024-03-29 17:20:15.655  INFO 11132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c679a89, org.springframework.security.web.context.SecurityContextPersistenceFilter@493a2c78, org.springframework.security.web.header.HeaderWriterFilter@26478eca, org.springframework.web.filter.CorsFilter@e79566b, org.springframework.security.web.authentication.logout.LogoutFilter@7cdd16b, com.Englilsh.configuration.spring.security.RestLoginAuthenticationFilter@71034262, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cbdd36d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d6bb5ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@266d78c1, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@27a6f06c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3559d5b4, org.springframework.security.web.session.SessionManagementFilter@706112da, org.springframework.security.web.access.ExceptionTranslationFilter@4812b88a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@400f6429]
+2024-03-29 17:20:16.165  INFO 11132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-29 17:20:16.226  INFO 11132 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-03-29 17:20:16.233  INFO 11132 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-03-29 17:20:16.316  INFO 11132 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-03-29 17:20:16.319  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : Started EnglishApplication in 2.798 seconds (JVM running for 3.549)
+2024-03-29 17:20:37.271  INFO 11132 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-29 17:20:37.272  INFO 11132 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-29 17:20:37.279  INFO 11132 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-03-29 17:20:46.621  INFO 11132 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-29 17:20:47.229  INFO 11132 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-29 17:20:47.235 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-29 17:20:47.254 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-29 17:20:47.300 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-29 17:20:47.325 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted from t_user where deleted=0 and user_name=? limit 1 
+2024-03-29 17:20:47.325 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : ==> Parameters: admin(String)
+2024-03-29 17:20:47.356 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.UserMapper.getUserByUserName     : <==      Total: 1
+2024-03-29 17:20:47.368 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-03-29 17:20:47.370 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-03-29 17:20:47.356(Timestamp)
+2024-03-29 17:20:47.433 DEBUG 11132 --- [XNIO-1 task-2] r.c.E.r.U.insertSelective                : <==    Updates: 1
+2024-03-29 17:20:47.514 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-03-29 17:20:47.514 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : ==> Parameters: 
+2024-03-29 17:20:47.550 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.ExamPaperMapper.selectAllCount   : <==      Total: 1
+2024-03-29 17:20:47.550 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-03-29 17:20:47.550 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : ==> Parameters: 
+2024-03-29 17:20:47.582 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.QuestionMapper.selectAllCount    : <==      Total: 1
+2024-03-29 17:20:47.583 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-03-29 17:20:47.584 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:20:47.615 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:20:47.616 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-03-29 17:20:47.618 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:20:47.652 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:20:47.655 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:20:47.656 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:20:47.691 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.U.selectCountByDate              : <==      Total: 6
+2024-03-29 17:20:47.694 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:20:47.695 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:20:47.724 DEBUG 11132 --- [XNIO-1 task-3] r.c.E.r.E.selectCountByDate              : <==      Total: 0
+2024-03-29 17:21:39.634 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-03-29 17:21:39.634 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : ==> Parameters: 
+2024-03-29 17:21:39.663 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.ExamPaperMapper.selectAllCount   : <==      Total: 1
+2024-03-29 17:21:39.664 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-03-29 17:21:39.664 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : ==> Parameters: 
+2024-03-29 17:21:39.692 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.QuestionMapper.selectAllCount    : <==      Total: 1
+2024-03-29 17:21:39.693 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-03-29 17:21:39.693 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:21:39.722 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:21:39.722 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-03-29 17:21:39.723 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:21:39.752 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:21:39.752 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:21:39.753 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:21:39.782 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.U.selectCountByDate              : <==      Total: 6
+2024-03-29 17:21:39.783 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:21:39.783 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:21:39.815 DEBUG 11132 --- [XNIO-1 task-4] r.c.E.r.E.selectCountByDate              : <==      Total: 0
+2024-03-29 17:21:44.377 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.ExamPaperMapper.selectAllCount   : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-03-29 17:21:44.377 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.ExamPaperMapper.selectAllCount   : ==> Parameters: 
+2024-03-29 17:21:44.407 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.ExamPaperMapper.selectAllCount   : <==      Total: 1
+2024-03-29 17:21:44.408 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.QuestionMapper.selectAllCount    : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-03-29 17:21:44.408 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.QuestionMapper.selectAllCount    : ==> Parameters: 
+2024-03-29 17:21:44.437 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.QuestionMapper.selectAllCount    : <==      Total: 1
+2024-03-29 17:21:44.437 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-03-29 17:21:44.438 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:21:44.467 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:21:44.467 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-03-29 17:21:44.467 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : ==> Parameters: 
+2024-03-29 17:21:44.497 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectAllCount                 : <==      Total: 1
+2024-03-29 17:21:44.497 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.U.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:21:44.498 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.U.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:21:44.528 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.U.selectCountByDate              : <==      Total: 6
+2024-03-29 17:21:44.529 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectCountByDate              : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-03-29 17:21:44.529 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectCountByDate              : ==> Parameters: 2024-03-01 00:00:00.0(Timestamp), 2024-03-31 23:59:59.0(Timestamp)
+2024-03-29 17:21:44.559 DEBUG 11132 --- [XNIO-1 task-5] r.c.E.r.E.selectCountByDate              : <==      Total: 0
+2024-03-29 17:22:19.949 DEBUG 11132 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-29 17:22:19.949 DEBUG 11132 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-29 17:22:19.979 DEBUG 11132 --- [XNIO-1 task-6] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 14
+2024-03-29 17:22:20.255 DEBUG 11132 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2024-03-29 17:22:20.255 DEBUG 11132 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : ==> Parameters: 
+2024-03-29 17:22:20.301 DEBUG 11132 --- [XNIO-1 task-7] r.c.E.r.ExamPaperMapper.page_COUNT       : <==      Total: 1
+2024-03-29 17:22:22.976 DEBUG 11132 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-29 17:22:22.976 DEBUG 11132 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2024-03-29 17:22:22.976 DEBUG 11132 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-29 17:22:22.976 DEBUG 11132 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : ==> Parameters: 
+2024-03-29 17:22:23.010 DEBUG 11132 --- [XNIO-1 task-9] r.c.E.r.QuestionMapper.page_COUNT        : <==      Total: 1
+2024-03-29 17:22:23.011 DEBUG 11132 --- [XNIO-1 task-8] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 14
+2024-03-29 17:22:23.012 DEBUG 11132 --- [XNIO-1 task-9] r.c.E.repository.QuestionMapper.page     : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-29 17:22:23.012 DEBUG 11132 --- [XNIO-1 task-9] r.c.E.repository.QuestionMapper.page     : ==> Parameters: 10(Integer)
+2024-03-29 17:22:23.442 ERROR 11132 --- [XNIO-1 task-9] c.E.c.spring.exception.ExceptionHandle   : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at jdk.proxy2/jdk.proxy2.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at jdk.proxy3/jdk.proxy3.$Proxy75.page(Unknown Source)
+	at com.Englilsh.service.impl.QuestionServiceImpl.lambda$page$0(QuestionServiceImpl.java:51)
+	at com.github.pagehelper.Page.doSelectPageInfo(Page.java:353)
+	at com.Englilsh.service.impl.QuestionServiceImpl.page(QuestionServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at jdk.proxy3/jdk.proxy3.$Proxy78.page(Unknown Source)
+	at com.Englilsh.controller.admin.QuestionController.pageList(QuestionController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.util.ExecutorUtil.pageQuery(ExecutorUtil.java:177)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:104)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy102.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 111 common frames omitted
+
+2024-03-29 17:22:38.428 DEBUG 11132 --- [XNIO-1 task-11] r.c.E.r.QuestionMapper.page_COUNT        : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2024-03-29 17:22:38.428 DEBUG 11132 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject 
+2024-03-29 17:22:38.429 DEBUG 11132 --- [XNIO-1 task-11] r.c.E.r.QuestionMapper.page_COUNT        : ==> Parameters: 
+2024-03-29 17:22:38.429 DEBUG 11132 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : ==> Parameters: 
+2024-03-29 17:22:38.462 DEBUG 11132 --- [XNIO-1 task-11] r.c.E.r.QuestionMapper.page_COUNT        : <==      Total: 1
+2024-03-29 17:22:38.463 DEBUG 11132 --- [XNIO-1 task-11] r.c.E.repository.QuestionMapper.page     : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2024-03-29 17:22:38.463 DEBUG 11132 --- [XNIO-1 task-11] r.c.E.repository.QuestionMapper.page     : ==> Parameters: 10(Integer)
+2024-03-29 17:22:38.463 DEBUG 11132 --- [XNIO-1 task-10] r.c.E.r.SubjectMapper.allSubject         : <==      Total: 14
+2024-03-29 17:22:38.495 ERROR 11132 --- [XNIO-1 task-11] c.E.c.spring.exception.ExceptionHandle   : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+### The error may exist in file [D:\MySecret\JAVA\English1\English-master\target\classes\mapper\QuestionMapper.xml]
+### The error may involve com.Englilsh.repository.QuestionMapper.page-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id, question_type, subject_id, score, grade_level, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at jdk.proxy2/jdk.proxy2.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at jdk.proxy3/jdk.proxy3.$Proxy75.page(Unknown Source)
+	at com.Englilsh.service.impl.QuestionServiceImpl.lambda$page$0(QuestionServiceImpl.java:51)
+	at com.github.pagehelper.Page.doSelectPageInfo(Page.java:353)
+	at com.Englilsh.service.impl.QuestionServiceImpl.page(QuestionServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at jdk.proxy3/jdk.proxy3.$Proxy78.page(Unknown Source)
+	at com.Englilsh.controller.admin.QuestionController.pageList(QuestionController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'grade_level' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.util.ExecutorUtil.pageQuery(ExecutorUtil.java:177)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:104)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy102.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 111 common frames omitted
+
+2024-03-29 17:25:23.181  INFO 11132 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-29 17:25:23.187  INFO 11132 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-29 17:25:23.188  INFO 11132 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-29 17:25:23.246  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 11132 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-29 17:25:23.246  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-29 17:25:23.570  WARN 11132 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-29 17:25:23.571  INFO 11132 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-29 17:25:23.571  INFO 11132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 324 ms
+2024-03-29 17:25:23.879  WARN 11132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+2024-03-29 17:25:23.884  INFO 11132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-29 17:25:23.886 ERROR 11132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.Englilsh.EnglishApplication.main(EnglishApplication.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.createDeploymentManager(UndertowServletWebServerFactory.java:279)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.getWebServer(UndertowServletWebServerFactory.java:206)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:676)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:252)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:226)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory$Initializer.onStartup(UndertowServletWebServerFactory.java:592)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:203)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 61 common frames omitted
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:550)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:363)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108)
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319)
+	at org.springframework.cglib.reflect.FastClass$Generator.create(FastClass.java:65)
+	at org.springframework.cglib.proxy.MethodProxy.helper(MethodProxy.java:135)
+	at org.springframework.cglib.proxy.MethodProxy.init(MethodProxy.java:76)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:242)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.Englilsh.configuration.spring.mvc.WebMvcConfiguration$$EnhancerBySpringCGLIB$$77b3da57.mvcContentNegotiationManager(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: java.lang.LinkageError: loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at java.base/java.lang.ClassLoader.defineClass0(Native Method)
+	at java.base/java.lang.System$2.defineClass(System.java:2307)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2439)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2416)
+	at java.base/java.lang.invoke.MethodHandles$Lookup.defineClass(MethodHandles.java:1843)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:547)
+	... 82 common frames omitted
+
+2024-03-29 18:48:53.299  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : Starting EnglishApplication on Jessie with PID 11132 (D:\MySecret\JAVA\English1\English-master\target\classes started by 25032 in D:\MySecret\JAVA\English1\English-master)
+2024-03-29 18:48:53.299  INFO 11132 --- [restartedMain] com.Englilsh.EnglishApplication          : The following profiles are active: dev
+2024-03-29 18:48:53.593  WARN 11132 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-03-29 18:48:53.593  INFO 11132 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-03-29 18:48:53.593  INFO 11132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 292 ms
+2024-03-29 18:48:53.719  WARN 11132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+2024-03-29 18:48:53.722  INFO 11132 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-29 18:48:53.722 ERROR 11132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.Englilsh.EnglishApplication.main(EnglishApplication.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.RuntimeException: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.createDeploymentManager(UndertowServletWebServerFactory.java:279)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.getWebServer(UndertowServletWebServerFactory.java:206)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfigurer.FormLoginWebSecurityConfigurerAdapter': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:676)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:252)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:226)
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory$Initializer.onStartup(UndertowServletWebServerFactory.java:592)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:203)
+	at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [com/Englilsh/configuration/spring/mvc/WebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:668)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 61 common frames omitted
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.LinkageError-->loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:550)
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:363)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108)
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319)
+	at org.springframework.cglib.reflect.FastClass$Generator.create(FastClass.java:65)
+	at org.springframework.cglib.proxy.MethodProxy.helper(MethodProxy.java:135)
+	at org.springframework.cglib.proxy.MethodProxy.init(MethodProxy.java:76)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:242)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.Englilsh.configuration.spring.mvc.WebMvcConfiguration$$EnhancerBySpringCGLIB$$77b3da57.mvcContentNegotiationManager(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: java.lang.LinkageError: loader 'app' attempted duplicate class definition for org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c. (org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$$FastClassBySpringCGLIB$$69f69f7c is in unnamed module of loader 'app')
+	at java.base/java.lang.ClassLoader.defineClass0(Native Method)
+	at java.base/java.lang.System$2.defineClass(System.java:2307)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2439)
+	at java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass(MethodHandles.java:2416)
+	at java.base/java.lang.invoke.MethodHandles$Lookup.defineClass(MethodHandles.java:1843)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:547)
+	... 82 common frames omitted
+
